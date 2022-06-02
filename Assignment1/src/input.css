@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'RedHatDisplay', sans-serif;
+    src: url("./fonts/RedHatDisplay-Light.ttf") format('truetype');
+    font-weight: 300;
+}
+
+.menu {
+    @apply
+    hidden
+    fixed top-0 left-0 w-full h-screen 
+    bg-green-500 flex flex-col 
+    justify-center items-center
+    md:relative md:h-auto md:bg-transparent
+    md:flex md:flex-row md:space-x-4 md:justify-end
+}
+
+.menu-link {
+    @apply
+    block p-3 text-white md:text-black hover:text-red-400
+}
